@@ -1,9 +1,10 @@
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/public/styles.css">
-  <title>Document</title>
+  <title>HTML Tag Color Selecter</title>
   <script src="/js/index.js" defer></script>
 
   <!-- 
@@ -12,10 +13,11 @@
     -Create buttons for each tag  (complete)
     -Javascript for hover state on selector box  (complete)
     -add color to palette, onlclick function  (complete)
-    -header
-    -Random color function, adds random color to palette
-    -Clear palette button
+    -header (complete)
+    -Random color function, adds random color to palette (complete)
+    -Clear palette button (complete)
     -final CSS
+    -UI, functionailty and web accesibilty 
 
       -->
 
@@ -40,12 +42,19 @@
     </div>
 
 
+    <div class="random-box">
 
+      <button onclick="randomButton()" class="randomButton">Random Color</button>
+    </div>
 
   </div> 
 
+  <div class="list-colors">
+    <p></p>
+  </div>
+
   <div class="color-grid">
-    <button onClick="alert('you clicked')"class="aliceblue">aliceblue</button>
+    <button class="aliceblue">aliceblue</button>
     <button class="antiquewhite">antiquewhite</button>
     <button class="aqua">aqua</button>
     <button class="aquamarine">aquamarine</button>
