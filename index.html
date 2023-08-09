@@ -4,56 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/public/styles.css">
-  <title>HTML Tag Color Selecter</title>
   <script src="/js/index.js" defer></script>
+  <title>HTML Color Tag Picker</title>
 
   <!-- 
     
-    Hmtml Color Picker
+    Hmtml Color Picker to-do list
     -Create buttons for each tag  (complete)
     -Javascript for hover state on selector box  (complete)
     -add color to palette, onlclick function  (complete)
     -header (complete)
     -Random color function, adds random color to palette (complete)
     -Clear palette button (complete)
-    -final CSS
-    -UI, functionailty and web accesibilty 
+    -final CSS (complete)
+    -UI, functionailty and web accesibilty text (complete)
 
       -->
 
 </head>
 <body>
-  <header><p>HTML Tag Color Selecter:</p></header>
+  <header><h4>HTML Color Tag Picker</h4></header>
   
-
-  <div class="palette-container">
-    <div class="select-box">
+  <aside>
+  <div class="palette-container" aria-label="contains content of palette">
+    <div class="select-box" role="selects your color">
       <p>Click Color Below</p>
     </div>
     
-    <div class="add-box">
+    <div class="add-box" aria-label="adds color to palette">
 
       <button onclick="createBox()" class="addButton">Add color</button>
     </div>
    
-    <div class="clear-box">
+    <div class="clear-box" aria-label="removes all colors in palette">
 
       <button onclick="clearColors()" class="clearButton">Clear Colors</button>
     </div>
 
 
-    <div class="random-box">
+    <div class="random-box" aria-label="random color in palette">
 
       <button onclick="randomButton()" class="randomButton">Random Color</button>
     </div>
 
   </div> 
+</aside>
 
-  <div class="list-colors">
-    <p></p>
-  </div>
 
-  <div class="color-grid">
+
+  <main>
+  <div class="color-grid" aria-label="container to hold all html color tags">
     <button class="aliceblue">aliceblue</button>
     <button class="antiquewhite">antiquewhite</button>
     <button class="aqua">aqua</button>
@@ -195,6 +195,7 @@
     <button class="yellow">yellow</button>
     <button class="yellowgreen">yellowgreen</button>
   </div>
+</main>
 
  
 

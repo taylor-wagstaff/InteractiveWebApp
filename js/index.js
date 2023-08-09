@@ -25,7 +25,6 @@ let addbtn = document.querySelector('.addButton')
 addbtn.style.backgroundImage = "url('public/ccrulogo.jpeg')"
 
 function createBox() {
-
   // Create a new div element
   let newBox = document.createElement('div')
   // adds class name
@@ -35,8 +34,9 @@ function createBox() {
   addBox.appendChild(newBox)
 
   let selectText = document.querySelector('.select-box p').innerHTML
- 
+
   newBox.style.backgroundColor = `${selectText}`
+  newBox.textContent = `${selectText}`
 
   // // adds colors to a list?
   // let colorList = document.querySelector('.list-colors p') // select the 'p' element directly
@@ -52,7 +52,6 @@ function createBox() {
 }
 
 function clearColors() {
-
   let addBox = document.querySelector('.palette-container')
   let boxes = addBox.querySelectorAll('.box')
 
@@ -74,4 +73,5 @@ function randomButton() {
   addBox.appendChild(newBox)
 
   newBox.style.backgroundColor = `${randomTerm.innerHTML}`
+  newBox.textContent = `${randomTerm.innerHTML}`
 }
