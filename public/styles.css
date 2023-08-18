@@ -5,24 +5,30 @@ body {
 
 h4 {
   font-weight:lighter;
-  font-size: 1rem; 
+  font-size: 2rem; 
 }
 
 header{
 
-  color: black;
+
+  
+  /* color: black;
   border: 2px solid black;
   border-radius: 1rem;
   border-style: dashed;
   text-align: center;
   width:fit-content;
-  padding: 0.5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 1rem;
+  padding-right: 1rem; */
   margin-bottom: 1rem;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  float: right;
+  float: left; */
+
+
+
 
 }
 
